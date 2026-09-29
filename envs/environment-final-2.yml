@@ -1,0 +1,18 @@
+name: final_2
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - ffmpeg
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+      - torch==2.8.0+cu128
+      - torchvision==0.23.0+cu128
+      - torchaudio==2.8.0+cu128
+      - numpy
+      - librosa==0.10.2.post1
+      - matplotlib
+      - transformers==4.45.2
+      - pandas
+      - scipy

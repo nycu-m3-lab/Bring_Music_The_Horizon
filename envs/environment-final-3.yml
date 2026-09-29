@@ -1,0 +1,17 @@
+name: final_3
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+      - torch==2.8.0+cu128
+      - torchvision==0.23.0+cu128
+      - torchaudio==2.8.0+cu128
+      - numpy
+      - diffusers==0.31.0
+      - transformers==4.45.2
+      - accelerate
+      - safetensors
+      - scipy
